@@ -1,0 +1,63 @@
+{
+	"name": "gulp-template",
+	"version": "v1.1.3",
+	"author": "Znamenie",
+	"license": "PJ",
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp build --production true"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.16.5",
+		"@babel/preset-env": "^7.16.5",
+		"autoprefixer": "^10.4.0",
+		"browser-sync": "^2.27.7",
+		"cssnano": "^5.0.13",
+		"del": "^6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-changed": "^4.0.3",
+		"gulp-cli": "^2.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-hash-src": "^0.1.6",
+		"gulp-jsbeautifier": "^3.0.1",
+		"gulp-postcss": "^9.0.1",
+		"gulp-posthtml": "^3.0.5",
+		"gulp-prettier": "^4.0.0",
+		"gulp-sass": "^5.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-svg-sprite": "^1.5.0",
+		"gulp-watch": "^5.0.1",
+		"husky": "^7.0.4",
+		"jquery": "^3.6.0",
+		"lint-staged": "^12.1.2",
+		"posthtml-include": "^1.7.2",
+		"prettier": "^2.5.1",
+		"sass": "^1.45.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"prettier --write",
+			"git add"
+		],
+		"*.css": [
+			"prettier --write",
+			"git add"
+		],
+		"*.scss": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"gulp-uglify-es": "^3.0.0",
+		"posthtml-remove-attributes": "^1.0.0",
+		"posthtml-richtypo": "^1.0.2",
+		"richtypo-rules-ru": "^4.0.9"
+	}
+}
