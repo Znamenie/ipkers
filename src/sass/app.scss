@@ -2,3 +2,71 @@
 @import '_variables';
 @import '_desktop.scss';
 @import '_responsive';
+
+@import '_nav';
+@import '_header';
+
+@font-face {
+    font-family: "Exo2-Regular";
+    src: url("../fonts/Exo-2/Exo2-Regular.woff2") format("woff2"),
+        url("../fonts/Exo-2/Exo2-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2-Medium";
+    src: url("../fonts/Exo-2/Exo2-Medium.woff2") format("woff2"),
+        url("../fonts/Exo-2/Exo2-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2-SemiBold";
+    src: url("../fonts/Exo-2/Exo2-SemiBold.woff2") format("woff2"),
+        url("../fonts/Exo-2/Exo2-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Exo2-Bold";
+    src: url("../fonts/Exo-2/Exo2-Bold.woff2") format("woff2"),
+        url("../fonts/Exo-2/Exo2-Bold.woff") format("woff");
+}
+
+* {
+    font-family: 'Exo2-Regular', sans-serif;
+}
+
+.button {
+    height: 50px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Exo2-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:focus {
+        outline: none;
+    }
+    
+    &--red {
+        background-color: $red;
+    }
+
+    &--green {
+        background-color: $green;
+    }
+
+    &--gray {
+        background-color: $gray;
+    }
+
+    &--white {
+        background-color: $white;
+        color: $text-color-3;
+        border: 1px solid $red;
+    }
+}
