@@ -1,0 +1,52 @@
+.gift {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-image: url(../img/gift/gift-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $text-color-1;
+
+    &__title h1 {
+        font-family: 'Exo2-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 54.24px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle h2 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28.8px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    &__button {
+        width: 250px;
+    }
+
+    &__input {
+        width: 250px;
+        margin-right: 15px;
+        padding-left: 15px;
+    }
+
+    &__personal-data {
+        font-size: 18px;
+        line-height: 21.6px;
+        
+        label, input { 
+            cursor: pointer;
+        }
+    }
+}

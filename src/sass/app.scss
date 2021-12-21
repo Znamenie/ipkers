@@ -6,6 +6,12 @@
 @import '_nav';
 @import '_header';
 
+@import '_main-upcoming-tours';
+@import '_main-exactly';
+@import '_main-gift';
+@import '_main-tour-schedule';
+
+
 @font-face {
     font-family: "Exo2-Regular";
     src: url("../fonts/Exo-2/Exo2-Regular.woff2") format("woff2"),
@@ -47,13 +53,31 @@
     font-family: 'Exo2-Regular', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    transition: 0.5s;
+
+    &:disabled {
+        background-color: $gray;
+        border: 1px solid $gray;
+        color: $text-color-4;
+    }
 
     &:focus {
         outline: none;
     }
+
+    &:active {
+        opacity: 0.5;
+    }
     
     &--red {
         background-color: $red;
+        border: 1px solid $red;
+
+        &:hover {
+            background-color: $white;
+            color: $text-color-3;
+            border: 1px solid $red;
+        }
     }
 
     &--green {
@@ -68,5 +92,78 @@
         background-color: $white;
         color: $text-color-3;
         border: 1px solid $red;
+
+        &:hover {
+            background-color: $red;
+            color: $text-color-4;
+            border: 1px solid $red;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}
+
+.input {
+    border: 2px solid $white;
+    height: 50px;
+
+    &:focus {
+        border: 2px solid #007DFA;
+        border-radius: 0;
+    }
+
+    &:focus-visible, &:active {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #C4C4C4;
+        font-size: 18px;
+        font-family: 'Exo2-Regular', sans-serif;
+        font-weight: 400;
+    }
+}
+
+.main-container {
+    padding: 100px 275px 0;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    color: $text-color-1;
+    margin-bottom: 90px;
+
+    h2 {
+        font-size: 48px;
+        line-height: 54.24px;
+        font-family: 'Exo2-Bold', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    &__caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Exo2-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: none;
+        height: 34px;
+
+        &::before {
+            content: url(../img/header-logo.svg);
+            margin: 10px 10px 0 0;
+        }
+
+        p {
+            margin: 0;
+            line-height: 28.8px;
+        }
     }
 }
