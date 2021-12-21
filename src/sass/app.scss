@@ -10,6 +10,7 @@
 @import '_main-exactly';
 @import '_main-gift';
 @import '_main-tour-schedule';
+@import '_main-about-us';
 
 
 @font-face {
@@ -82,6 +83,17 @@
 
     &--green {
         background-color: $green;
+        border: 1px solid $green;
+
+        &:hover {
+            background-color: $white;
+            color: $text-color-5;
+            border: 1px solid $green;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
     }
 
     &--gray {
