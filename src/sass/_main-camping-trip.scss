@@ -1,13 +1,13 @@
-.gift {
+.camping-trip {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 600px;
-    background-image: url(../img/gift/gift-bg.png);
+    background-image: url(../img/camping-trip/camping-trip-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    color: $text-color-1;
+    color: $text-color-4;
 
     &__title h2 {
         font-family: 'Exo2-Bold', sans-serif;

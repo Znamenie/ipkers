@@ -51,3 +51,29 @@ $(function() {
   objectFitImages();
   initPhoneMask();
 });
+
+$(function() {
+	$('.slider').slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 950,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	})
+})

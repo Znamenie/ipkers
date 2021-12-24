@@ -1,0 +1,167 @@
+.slick-slide {
+	width: 305px;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 70px;
+}
+
+.slider__button {
+	width: 100%;
+}
+
+.slider__item {
+	height: 444px;
+	background: $white-bg;
+	margin: 0 25px;
+}
+
+.slick-initialized .slick-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.slider__item__logo {
+	height: 230px;
+	margin-bottom: 9px;
+}
+
+.slider__item__logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider__item__title {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+
+.slider__item__top {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 22px;
+	border-bottom: 1px solid $gray;
+}
+
+.slider__item__date {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 300;
+	color: $text-color-6;
+}
+
+.slider__item__distance {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 19.26px;
+	color: #000000;
+}
+
+.slider__item__bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 12px 0;
+}
+
+.slider__item__price {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	color: $text-color-3;
+}
+
+.slider__item__long {
+	font-size: 18px;
+	line-height: 19.26px;
+	font-weight: 400;
+	color: $text-color-5;
+}
+
+.slick-dots {
+	bottom: -70px;
+}
+
+.slick-dots li {
+	width: 138px;
+	padding: 0;
+	margin: 0;
+	height: 3px;
+	background: $gray;
+}
+
+.slick-dots .slick-active {
+	background: #000000;
+}
+
+.slick-dots li button {
+	width: inherit;
+	height: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-dots li button:before {
+	content: '';
+	width: inherit;
+	height: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-next,
+.slick-prev {
+	width: auto;
+	height: auto;
+}
+
+.slick-next {
+	right: -60px;
+}
+
+.slick-prev {
+	left: -60px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+	width: 29px;
+	height: 58px;
+}
+
+.slick-next:before {
+	content: url(../../img/upcoming-tours/right.svg);
+}
+
+.slick-prev:before {
+	content: url(../../img/upcoming-tours/left.svg);
+}
+
+@media (max-width: 1080px) {
+	.slick-arrow {
+		display: none;
+	}
+
+	.container {
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 640px) {
+	.slick-dots li {
+		width: 60px;
+	}
+}
+
+@media (max-width: 380px) {
+	.slick-dots li {
+		width: 30px;
+	}
+}
