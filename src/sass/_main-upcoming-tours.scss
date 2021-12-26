@@ -1,12 +1,24 @@
 .upcoming-tours {
     display: flex;
     align-items: center;
+    height: auto;
     flex-direction: column;
-    min-height: 893px;
     background-color: $white-bg;
 
     &__slider {
         width: 100%;
         max-width: 1370px;
+
+        @media screen and (max-width: 1550px) {
+            max-width: 1015px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            max-width: 660px;
+        }
+
+        @media screen and (max-width: 820px) {
+            max-width: 305px;
+        }
     }
 }

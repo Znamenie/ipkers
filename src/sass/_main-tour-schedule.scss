@@ -3,4 +3,41 @@
     flex-direction: column;
     background-color: $white-bg;
     min-height: 1030px;
+
+    &__button {
+        path {
+            fill: #ffffff;
+            transition: 0.3s;
+        }
+
+        &:hover path {
+            fill: $green;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tabs {
+        display: grid;
+        grid-gap: 17px;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        width: 100%;
+        margin-bottom: 70px;
+
+        button {
+            height: 100px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 400px) {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+    }
+
+    &__schedule {
+        padding: 0 118px;
+    }
 }

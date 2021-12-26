@@ -60,18 +60,31 @@ $(function() {
 		slidesToScroll: 4,
 		variableWidth: true,
 		responsive: [
+      {
+				breakpoint: 1550,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3
+				}
+			},
 			{
-				breakpoint: 950,
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2
 				}
 			},
 			{
-				breakpoint: 640,
+				breakpoint: 820,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
+				}
+			},
+      {
+				breakpoint: 500,
+				settings: {
+					arrows: false
 				}
 			}
 		]
